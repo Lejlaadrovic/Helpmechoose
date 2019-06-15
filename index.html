@@ -14,7 +14,7 @@
       <button class="addOption">Add</button>
     </div>
     <div class="resultSection"></div>
-    <button>GO!</button>
+    <button class ="submit">GO!</button>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
@@ -30,14 +30,14 @@
         var submit = function () {
           $('.inputSection').hide()
           $('.resultsection').css('display', 'flex')
-          $ ('input').each(function) {
+          $('input').each(function) {
             options.push($(this).val())
           })
-          var = winner = options [Math.floor(Math.random()* options.length)]
+          var = winner = options[Math.floor(Math.random() * options.length)]
           console.log(winner)
           $('resultsection').text(winner)
         }
-        $('submit').click(submit)
+        $('.submit').click(submit)
       })
     </script>
   </body>
